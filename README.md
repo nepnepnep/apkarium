@@ -40,13 +40,8 @@ source .venv/bin/activate  # Для Linux/Mac
 pip install -r requirements.txt
 ```
 
-### 4. Подготовьте директорию хранения APK
 
-```bash
-mkdir -p ./storage/apks
-```
-
-### 5. Запустите FastAPI сервер
+### 4. Запустите FastAPI сервер
 
 ```bash
 uvicorn apkarium.main:app --reload

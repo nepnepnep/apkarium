@@ -3,7 +3,7 @@ from fastapi.responses import FileResponse
 import os
 
 API_TOKEN = os.getenv("API_TOKEN", "mysecrettoken_87236853")
-UPLOAD_DIR = os.getenv("UPLOAD_DIR", "./uploads")
+UPLOAD_DIR = os.getenv("UPLOAD_DIR", "./storage/apks")
 os.makedirs(UPLOAD_DIR, exist_ok=True)
 
 app = FastAPI()
